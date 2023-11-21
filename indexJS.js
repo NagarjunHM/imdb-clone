@@ -95,7 +95,7 @@ const addNoSuggestion = () => {
 const searchMovie = async (e) => {
   pBar.style.width = "25%";
   const result = await fetch(
-    `http://www.omdbapi.com/?t=${e.target.value}&apikey=301dbfd`
+    `https://www.omdbapi.com/?t=${e.target.value}&apikey=301dbfd`
   )
     .then((res) => res.json())
     .catch((error) => error)
