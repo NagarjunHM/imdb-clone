@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+ 
+<body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+    </div>
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
+ 
+    <div class="progress pBar" style="width:0%; height:2px;">
+        <div class="progress-bar" style="width:100%"></div>
+    </div>
+ 
+ 
+    <!-- search bar -->
+    <div class="row m-3">
+        <label for="searchMovie" aria-autocomplete="off" class="col-5 col-form-label">Search Movie</label>
+        <div class="col-12 ">
+            <input type="text" class="form-control dropdown-toggle" id="searchMovie" placeholder="Enter Movie Name">
+            <div class="list-group overflow-auto col-12 my-1 autoCompList" style="max-height:210px;">
+            </div>
+ 
+        </div>
+    </div>
+ 
+ 
+    </div>
+ 
+    <div class="cardBody d-flex flex-row flex-wrap justify-content-center  ">
+ 
+    </div>
+ 
+ 
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="indexJS.js"></script>
+ 
+</body>
+ 
+</html>
